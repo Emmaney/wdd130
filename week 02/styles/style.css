@@ -34,7 +34,7 @@ main {
 }
 
 main img {
-  width: 150px;
+  width: 110px;
   height: auto;
   border-radius: 10px;
 }
@@ -47,8 +47,10 @@ h1 {
 p {
   padding: 0;
   margin-top: 1rem;
+  font-size: 18px;
+  line-height: 1.6;
 }
-
+ 
 aside {
   width: 20rem;
   margin: 1rem auto;
