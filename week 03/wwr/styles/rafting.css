@@ -1,0 +1,129 @@
+:root {
+    --primary-color: #005f73;
+    --secondary-color: #0a9396;
+    --accent1-color: #001219;
+    --accent2-color: #e9d8a6;
+
+    --heading-font: Georgia, serif;
+    --body-font: Arial, sans-serif;
+}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+/* Layout Width */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    padding: 16px;
+    background-color: var(--accent2-color);
+}
+
+header img {
+    width: 120px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Headings */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* General spacing */
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Hero Heading */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.8;
+    background-color: var(--accent1-color);
+    color: white;
+}
+
+/* Hero Article */
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+/* Article Image */
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 16px;
+    border: 2px solid var(--primary-color);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: var(--accent2-color);
+}
+
+/* Social Media */
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 32px;
+    margin-left: 10px;
+}
